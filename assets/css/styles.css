@@ -244,3 +244,24 @@ footer a:hover {
     background-color: lightgray;
 }
 
+#about-body {
+    background-color: lightgray;
+}
+
+.about-container {
+    margin-top: 6em;
+    margin-left: 2em;
+    margin-right: 2em;
+    min-height: 30em;
+}
+
+.about-container h2 {
+    font-size: 2rem;
+}
+
+.about-container p {
+    font-size: 0.9rem;
+}
+.about-section {
+    text-align: center;
+}
