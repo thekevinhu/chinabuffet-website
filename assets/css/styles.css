@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'Cinzel';
+    src: url('../fonts/Cinzel/static/Cinzel-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('../fonts/Cinzel/static/Cinzel-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('../fonts/Cinzel/static/Cinzel-ExtraBold.ttf') format('truetype');
+    font-weight: bolder;
+}
+
+body {
+    margin: 0;
+    padding-top: 3%;
+    font-family: 'Cinzel', serif;
+}
+
+header {
+    display: grid;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 2% 20px;
+    background-color: rgb(235, 38, 38);
+}
+
+header .logo {
+    grid-column: 1;
+    margin-left: 0.6em;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+}
+
+header nav {
+    justify-self: end;
+    margin-right: 3em;
+    text-align: center;
+}
+
+header nav a {
+    margin-left: 2vw;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+}
+
+.section {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 50vh;
+    padding-bottom: 50px;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    text-align: center;
+}
+
+#first-section {
+    background-image: url('../images/dumpling.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 1em;
+}
+
+#second-section {
+    background-image: url('../images/eggroll.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#third-section {
+    background-image: url('../images/chineselanterns.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section h2 {
+    font-weight: bold;
+    font-size: 3em;
+    color: white;
+}
+
+.section p {
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    font-size: 0.85em;
+}
+
+.section a {
+    font-weight: bold;
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.section a:hover {
+    text-decoration: underline;
+    color: #FFA500;
+}
+
+footer {
+    display: grid;
+    font-family: 'Cinzel', serif;
+    background-color: black;
+    color: white;
+    padding-top: 1.2em;
+    padding-left: 1em;
+    padding-right: 1.5em;
+    padding-bottom: 0.2em;
+}
+
+footer h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+footer p, a {
+    margin: 0;
+    font-size: 0.7em;
+    font-weight: normal;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color:rgb(235, 38, 38);
+}
+
+.footer-content {
+    padding: 0.5em;
+}
+
+.quick-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    justify-items: center;
+    width: auto;
+    margin: 0;
+    padding: 0.5em;
+    gap: 1em;
+    padding-top: 0.5em;
+}
+
+.social-icons {
+    align-items: center;
+    text-align: center;
+}
+
+.fa {
+    margin: 1.2em;
+    padding: 1.8em;
+    font-size: 2rem;
+    width: 1em;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 0;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 7em;
+}
+
+.contact-section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    min-height: 30vh;
+    height: 70vh;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.contact-section a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.contact-section a:hover {
+    color:rgb(235, 38, 38);
+    text-decoration: underline;
+}
+
+.contact-section p {
+    font-weight: normal;
+}
+
+#contact-body {
+    background-color: lightgray;
+}
+
