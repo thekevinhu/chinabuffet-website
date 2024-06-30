@@ -60,6 +60,12 @@ header .logo {
     text-align: center;
 }
 
+@media (max-width: 410px) {
+    header .logo {
+        margin-left: 0;
+    }
+}
+
 header nav {
     justify-self: end;
     margin-right: 3em;
