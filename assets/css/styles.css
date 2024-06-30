@@ -217,6 +217,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1400px;
+    min-height: 470px;
     box-sizing: border-box;
     padding: 2em;
     margin-top: 5em;
