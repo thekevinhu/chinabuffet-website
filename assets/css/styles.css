@@ -17,7 +17,15 @@
     font-weight: bolder;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    display: grid;
     margin: 0;
     padding-top: 3%;
     font-family: 'Cinzel', serif;
@@ -69,7 +77,6 @@ header nav a {
 .main-container {
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    min-width: 480px; /* may need to be adjusted */
 }
 
 .section {
@@ -139,6 +146,7 @@ footer {
     padding-left: 1em;
     padding-right: 1.5em;
     padding-bottom: 0.2em;
+    width: 100%;
 }
 
 footer h3 {
