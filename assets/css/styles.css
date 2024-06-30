@@ -295,7 +295,6 @@ footer a:hover {
 @media (max-width: 800px) {
     .contact-container {
         grid-template-columns: 1fr;
-        gap: 5em;
     }
 
     .map-section {
