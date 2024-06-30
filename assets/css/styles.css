@@ -80,7 +80,7 @@ header nav a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: 1em;
+    padding-top: 8vh;
 }
 
 #second-section {
@@ -210,7 +210,11 @@ footer a:hover {
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 7em;
+    max-width: 1400px;
+    box-sizing: border-box;
+    padding: 2em;
+    margin-top: 5em;
+    width: 100%;
 }
 
 .contact-section {
@@ -269,7 +273,36 @@ footer a:hover {
 }
 
 .map-section {
-    margin-left: 0.5em;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    min-height: 20%;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 40%;
+}
+
+.map-section iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (max-width: 800px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .map-section {
+        order: -1;
+        padding-bottom: 75%;
+        height: 5%;
+        margin-top: 0.5em;
+    }
 }
 
 .menu-section {
