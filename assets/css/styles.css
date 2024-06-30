@@ -23,6 +23,12 @@ body {
     font-family: 'Cinzel', serif;
 }
 
+@media (max-width: 800px) {
+    body {
+        margin-top: 5rem;
+    }
+}
+
 header {
     display: grid;
     position: fixed;
@@ -302,7 +308,6 @@ footer a:hover {
         padding-bottom: 75%;
         height: 5%;
         margin-top: 0.5em;
-        margin-bottom: 1em;
     }
 }
 
